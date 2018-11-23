@@ -1,0 +1,15 @@
+Escribir una clase llamada ModernSuperMarket que implemente
+el funcionamiento de n cajas de supermercado.
+
+Los m clientes del supermercado estarán un tiempo aleatorio
+comprando y luego se pondrán a esperar en una fila única.
+
+Cuando cualquier caja esté disponible, el primero de la cola será
+atendido en la caja correspondiente.
+
+ESQUEMA:
+Hay varias Cajas (Hilos) que operan en paralelo despachando clientes
+Los clientes también son hilos, se generan continuamente mientras el
+supermercado esté abierto y tras un tiempo de espera van a la fila
+La fila unica es un buffer en el que se van almacenando clientes en
+orden de llegada, el primero que llega es el primero que sale.
